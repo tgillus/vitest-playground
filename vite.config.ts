@@ -2,6 +2,6 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   test: {
-    setupFiles: ['./test/setup/setup.ts'],
+    globalSetup: ['./test/setup/global.ts'],
   },
 });
