@@ -1,19 +1,5 @@
 {
-  "name": "vitest-playground",
-  "type": "module",
-  "version": "0.0.0",
-  "scripts": {
-    "build": "npm run clean && npm test && tsc",
-    "clean": "del-cli lib",
-    "format": "prettier . --write",
-    "lint": "eslint . --ext .js,.ts",
-    "lint:fix": "eslint . --ext .js,.ts --fix",
-    "prepare": "husky install",
-    "test": "vitest run",
-    "test:watch": "vitest"
-  },
   "author": "Tramaine L. Gillus",
-  "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
     "@commitlint/config-conventional": "19.2.2",
@@ -30,5 +16,19 @@
     "tsx": "4.11.0",
     "typescript": "5.4.5",
     "vitest": "1.6.0"
-  }
+  },
+  "license": "ISC",
+  "name": "vitest-playground",
+  "scripts": {
+    "build": "npm run clean && npm test && tsc",
+    "clean": "del-cli lib",
+    "format": "prettier . --write",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
+    "prepare": "husky install",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "type": "module",
+  "version": "0.0.0"
 }
